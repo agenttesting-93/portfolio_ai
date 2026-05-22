@@ -4,7 +4,7 @@ import { ArrowRight, Terminal, Database, Webhook, Cpu } from "lucide-react";
 export function Hero() {
   return (
     <section id="home" className="pt-32 pb-16 md:pt-48 md:pb-32 px-6 md:px-12 max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16 relative">
-      
+
       {/* Text Content */}
       <div className="flex-1 text-center lg:text-left z-10">
         <motion.div
@@ -16,26 +16,26 @@ export function Hero() {
           <span className="w-2 h-2 rounded-full bg-indigo-500 animate-pulse" />
           Available for new projects
         </motion.div>
-        
-        <motion.h1 
+
+        <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.1 }}
           className="text-5xl md:text-7xl font-bold tracking-tight text-white mb-6 leading-[1.1]"
         >
-          I Build <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-blue-400 to-emerald-400">AI Agents</span>, Automations & Smart Web Systems
+          Ahmad Raza <br /> <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-blue-400 to-emerald-400">Ai Automation Expert</span> & Web Developer
         </motion.h1>
-        
-        <motion.p 
+
+        <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
           className="text-lg md:text-xl text-slate-400 mb-10 max-w-2xl mx-auto lg:mx-0 leading-relaxed"
         >
-          I design and develop n8n workflows, AI-powered SaaS prototypes, automation systems, and modern Next.js interfaces that turn ideas into working products.
+          I design and develop n8n workflows, AI-powered SaaS prototypes, automation systems, and modern React.js / Next.js interfaces that turn ideas into working products.
         </motion.p>
-        
-        <motion.div 
+
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.3 }}
@@ -52,7 +52,7 @@ export function Hero() {
       </div>
 
       {/* Visual Composition */}
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.7, delay: 0.4 }}
@@ -71,7 +71,7 @@ export function Hero() {
 
           {/* Workflow Canvas Mockup */}
           <div className="relative h-full w-full bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px] rounded-xl border border-white/5 p-4 flex items-center justify-center">
-            
+
             {/* Connection Lines (SVG) */}
             <svg className="absolute inset-0 w-full h-full pointer-events-none" style={{ zIndex: 0 }}>
               <path d="M 120 100 C 180 100, 180 60, 240 60" stroke="rgba(99, 102, 241, 0.4)" strokeWidth="2" fill="none" className="animate-pulse" />
@@ -86,7 +86,7 @@ export function Hero() {
               <div className="flex gap-16 items-center absolute left-[10%] top-[40%] -translate-y-1/2">
                 <Node icon={<Webhook size={20} className="text-indigo-400" />} label="Webhook" />
               </div>
-              
+
               {/* Processing */}
               <div className="flex flex-col gap-12 absolute left-[45%] top-[20%] -translate-y-1/2">
                 <Node icon={<Cpu size={20} className="text-blue-400" />} label="AI Reasoning" active />
@@ -95,12 +95,12 @@ export function Hero() {
 
               {/* Output */}
               <div className="flex gap-16 items-center absolute left-[80%] top-[40%] -translate-y-1/2">
-                <Node icon={<Terminal size={20} className="text-violet-400" />} label="Next.js Client" glow="shadow-[0_0_20px_rgba(139,92,246,0.3)]" />
+                <Node icon={<Terminal size={20} className="text-violet-400" />} label="React.js Client" glow="shadow-[0_0_20px_rgba(139,92,246,0.3)]" />
               </div>
             </div>
 
             {/* Floating Status Card */}
-            <motion.div 
+            <motion.div
               animate={{ y: [0, -10, 0] }}
               transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
               className="absolute bottom-6 right-6 bg-[#030712]/90 backdrop-blur-md border border-white/10 rounded-lg p-3 shadow-xl flex items-center gap-3"
