@@ -1,7 +1,8 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+const nextConfig = (phase) => ({
   reactStrictMode: true,
-  output: 'export'
-};
+  distDir: phase === 'phase-development-server' ? '.next-dev' : '.next',
+  output: phase === 'phase-development-server' ? undefined : 'export'
+});
 
 export default nextConfig;

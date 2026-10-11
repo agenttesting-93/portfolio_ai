@@ -1,27 +1,30 @@
 import type { Metadata } from "next";
-import { JetBrains_Mono, Space_Grotesk } from "next/font/google";
+import localFont from "next/font/local";
 
-import { ThemeProvider, themeInitScript } from "@/components/theme/ThemeProvider";
 
 import "./globals.css";
 
-const spaceGrotesk = Space_Grotesk({
-  subsets: ["latin"],
+const spaceGrotesk = localFont({
+  src: "./fonts/space-grotesk-latin.woff2",
+  weight: "300 700",
+  display: "swap",
   variable: "--font-space-grotesk"
 });
 
-const jetBrainsMono = JetBrains_Mono({
-  subsets: ["latin"],
+const jetBrainsMono = localFont({
+  src: "./fonts/jetbrains-mono-latin.woff2",
+  weight: "100 800",
+  display: "swap",
   variable: "--font-jetbrains-mono"
 });
 
 export const metadata: Metadata = {
-  title: "Ahmad Raza | AI Automation Developer",
+  title: "Ahmad Raza — Frontend & AI Automation Engineer",
   description:
-    "Ahmad Raza builds AI agents, n8n automations, SaaS MVP prototypes, and modern Next.js interfaces with a premium AI-startup aesthetic.",
-  metadataBase: new URL("https://example.com"),
+    "Frontend development meets intelligent automation. Explore Ahmad Raza's web interfaces, AI agents, and n8n workflows.",
+  metadataBase: new URL("https://razaahmad.tech"),
   openGraph: {
-    title: "Ahmad Raza | AI Automation Developer",
+    title: "Ahmad Raza — Frontend & AI Automation Engineer",
     description:
       "Portfolio for Ahmad Raza, an AI Automation Developer and BSCS student focused on practical AI systems and smart web products.",
     type: "website"
@@ -30,12 +33,9 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" suppressHydrationWarning className={`${spaceGrotesk.variable} ${jetBrainsMono.variable}`}>
-      <head>
-        <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
-      </head>
+    <html lang="en" className={`dark ${spaceGrotesk.variable} ${jetBrainsMono.variable}`}>
       <body className="font-sans antialiased">
-        <ThemeProvider>{children}</ThemeProvider>
+        {children}
       </body>
     </html>
   );
