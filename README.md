@@ -13,10 +13,11 @@ Run `npm install`, then `npm run dev`. The preview is at http://localhost:3000. 
 - `public/files/Ahmad-Raza-CV.pdf`: original user-supplied CV, served for direct download.
 - `public/assets/ahmad-portrait.webp`: optimized AI-rendered portrait based on the user's reference photo.
 - `public/assets/ahmad-reference.jpg`: photo fallback if the rendered portrait cannot load.
+- `public/assets/convaryx-home.jpg`: first-screen capture of the live Convaryx website, linked to https://convaryx.razaahmad.tech/ in its project card.
 
 The portrait is a rendered bitmap with perspective and parallax interaction. It is **not a rigged 3D mesh** and does not independently animate the head or eyes. True gaze tracking needs a separately prepared rigged GLB with head/eye controls. Keep that asset boundary explicit when extending the experience.
 
-Zeno Trade Pro experience comes from the supplied CV. The other workflow descriptions are retained from the previous repository content. The project graphics are explicitly labeled interface concepts / workflow visualizations, not real product screenshots. No invented live-demo URLs are included. Replace the concept previews with approved screenshots and project links when available.
+Zeno Trade Pro experience comes from the supplied CV. The other workflow descriptions are retained from the previous repository content. Their project graphics are explicitly labeled interface concepts / workflow visualizations. Convaryx uses a real homepage screenshot and the user-provided live URL and technology stack.
 
 No database is needed. The page has no AI API calls and exposes no API key. Legacy landing-page components, chatbot, theme switcher, and their unused dependencies have been removed.
 
