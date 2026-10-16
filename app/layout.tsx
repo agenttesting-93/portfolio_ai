@@ -23,6 +23,12 @@ export const metadata: Metadata = {
   description:
     "Frontend development meets intelligent automation. Explore Ahmad Raza's web interfaces, AI agents, and n8n workflows.",
   metadataBase: new URL("https://razaahmad.tech"),
+  keywords: [
+    "Ahmad Raza",
+    "Raza Ahmad",
+    "Automation Developer",
+    "Frontend Developer",
+  ],
   openGraph: {
     title: "Ahmad Raza — Frontend & AI Automation Engineer",
     description:
