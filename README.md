@@ -14,6 +14,7 @@ Run `npm install`, then `npm run dev`. The preview is at http://localhost:3000. 
 - `public/assets/ahmad-portrait.webp`: optimized AI-rendered portrait based on the user's reference photo.
 - `public/assets/ahmad-reference.jpg`: photo fallback if the rendered portrait cannot load.
 - `public/assets/convaryx-home.jpg`: first-screen capture of the live Convaryx website, linked to https://convaryx.razaahmad.tech/ in its project card.
+- `public/assets/ak-mobile-home.jpg`: homepage screenshot of AK Mobile, linked to https://akmobile.razaahmad.tech/ in its project card. The overview and feature tags describe the publicly visible storefront; no unverified technology stack is listed.
 
 The portrait is a rendered bitmap with perspective and parallax interaction. It is **not a rigged 3D mesh** and does not independently animate the head or eyes. True gaze tracking needs a separately prepared rigged GLB with head/eye controls. Keep that asset boundary explicit when extending the experience.
 
